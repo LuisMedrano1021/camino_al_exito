@@ -1,0 +1,13 @@
+SELECT 
+    Cine.Nombre AS Nombre_Cine,
+    Pelicula.Titulo AS Titulo_Pelicula,
+    Genero.Nombre_genero AS Genero,
+    Horario.Fecha,
+    Horario.Hora_inicio,
+    Sala.Numero_sala,
+    Sala.Capacidad
+FROM Horario
+INNER JOIN Pelicula ON Horario.ID_Pelicula = Pelicula.ID_pelicula
+INNER JOIN Genero ON Pelicula.id_GENERO = Genero.ID_Genero
+INNER JOIN Sala ON Horario.ID_Sala = Sala.ID_sala
+INNER JOIN Cine ON Cine.ID_Horario = Horario.ID_Horario;
