@@ -1,0 +1,24 @@
+## hoy me toco aprender el diagrama de chein para mi proxima prueba de programacion
+solo son las cardinalidades, algo sencillo 
+
+estudie pensando en la base de datos que expondre que se basa en un cine 
+estas son las tablas 
+
+cine
+pelicula
+horario 
+boleto
+genero (de pelicula)
+sala
+cliente
+tipo (el tipo de sala, si es 3d por ejemplo
+
+##cardinalidades
+un cine tiene varias peliculas seria de 1:M se empieza con el minimo al maximo
+una pelicula tiene varios Horarios 1:M 
+un cine tiene varios Horarios 1:M
+un genero tiene varias peliculas 1:M
+un Horario tiene varios boletos 1:M
+un Horario tiene varias salas 1:M
+un Cliente puede tener varios boletos 1:M (aqui sinceramente veo una falla, un cliente puede tener de 1 a muchos boletos pero yo no hice los ej)
+un tipo tiene varias salas 1:M
