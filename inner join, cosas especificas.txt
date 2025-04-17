@@ -1,0 +1,23 @@
+SELECT  a.Titulo,
+        b.Nombre_genero,
+        c.ID_pelicula,
+        c.ID_sala,
+        h.Capacidad,
+	h.ID_Tipo
+from Pelicula a
+inner join Genero b on a.id_gENERO = b.ID_Genero
+inner join Horario c on a.ID_pelicula = c.ID_Pelicula
+inner join sala h on c.ID_Sala = h.ID_sala
+
+
+SELECT a.Nombre,
+       b.Fecha,
+       c.Titulo,
+       h.ID_Tipo,
+       h.Capacidad,
+       v.Nombre_genero
+from cine a
+inner join Horario b on a.ID_Horario = b.ID_Horario
+inner join Pelicula c on a.ID_pelicula = C.ID_pelicula
+inner join sala h on b.ID_Sala = h.ID_sala
+inner join Genero v on c.id_gENERO = v.ID_Genero
